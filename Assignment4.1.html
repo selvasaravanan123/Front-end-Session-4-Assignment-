@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+.bubble {
+  position: relative;
+  width: 170px;
+  height: 130px;
+  border-radius: 14px; 
+  background-color: skyblue;
+}
+.bubble::after {
+  position: absolute;
+  display: block;/*reduce the damage in FF3.0*/
+  border-width:70px 20px 0 11px;
+  border-bottom: 20px solid skyblue;
+   border-style:solid;
+   border-left-color: skyblue;
+   border-right-color:skyblue;
+  transform: rotate(36deg);/*Chrome, Safari,Opera*/
+  z-index: -1;
+  content: '';
+  
+}
+div{
+    align-content: center;
+}
+</style>
+    </head>
+        <body><br><br>
+        <div class="bubble">
+  </div>
+  </body>

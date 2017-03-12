@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+        div{
+            float:left; 
+        }
+        
+.linear{
+    width:60px;
+    height:60px;
+border-radius:7px;
+margin:10px;
+    background: linear-gradient(left,red,green);
+    background:linear-gradient(right,green,red);
+    background:linear-gradient(right,red,green);
+    background:linear-gradient(to right,red,green);
+}
+.circle{
+    width:60px;
+    height:60px;
+border-radius:7px;
+margin:10px;
+background:-webkit-radial-gradient(circle,red,yellow, green);
+    background:-o-radial-gradient(circle,red, yellow,green);
+    background:-moz-radial-gradient(circle,red, yellow, green);
+    background:radial-gradient(circle,red ,yellow, green);
+}
+.ellipse{
+    width:60px;
+    height:60px;
+border-radius:7px;
+margin:10px;
+background: -webkit-radial-gradient(red, yellow green);
+    background:-o-radial-gradient(red, yellow, green);
+    background:-moz-radial-gradient(red, yellow,green);
+    background:radial-gradient(red,yellow,green);
+}
+        </style>
+        </head>
+        <body> 
+            <div class="linear"><center><p>Box</p></center></div>
+            <div class="circle"><center><p>Box</p></center> </div>
+            <div class="ellipse"><center><p>Box</p></center></div>
+            </body>
+            </html>
